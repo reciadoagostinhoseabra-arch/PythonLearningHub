@@ -1,6 +1,0 @@
-Int              -   Inteiro
-Float            -   Real
-Bool             -   Boleano
-String           -   Conteudo letra
-List             -   Vector
-Dict             -   Json chave valor

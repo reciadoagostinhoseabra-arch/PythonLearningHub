@@ -2,6 +2,7 @@ idade = 6
 nome = "Lukoki Daniel"
 isValid = False
 lista = [1,3,"Lukoki","reciado"]
+
 dicionario = {
     "nome": "Lukoki",
     "idade": 20,

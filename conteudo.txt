@@ -1,0 +1,58 @@
+TRiopos de dados 
+Int              -   Inteiro
+Float            -   Real
+Bool             -   Boleano
+String           -   Conteudo letra
+List             -   Vector
+Dict             -   Json chave valor
+
+operadores aritimetricos
+
+adição                        +
+multiplicação                 *
+divisão                       /
+resto da divisão              %
+parte inteira da divisão       //
+expoente                       **
+igualidade                    ==
+atribuição                    =
+diferente                     !=
+
+Operadores logicos 
+and    
+or
+xor
+nor
+not
+
+operadores relacional
+
+>              
+<
+>=
+<=
+!=
+==
+
+estrutura condicional
+
+if(condicao):
+    instrucao
+
+if(condicao):
+    instrucao
+else:
+    instrucao
+
+if(condicao):
+    instrucao
+elif (condicao):
+    instrucao
+else:
+    instrucao
+
+
+estrtura de repetição
+while (condicao):
+    instrução
+
