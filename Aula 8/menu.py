@@ -21,8 +21,9 @@ while(True):
                 Matricula.matricular()
                 os.system("clear")
             case 2:
+                os.system("clear")
                 print("TELA LISTAR ESTUDANTE")
-                Matricula.mostrar()
+                Matricula.listarEstudante()
             case 3:
                 print("TELA ELIMINAR ESTUDANTE")
                 os.system("clear")
@@ -37,7 +38,8 @@ while(True):
                 os.system("clear")
             case 7:
                 print("TELA PESQUISAR ESTUDANTE")
-                os.system("clear")
+                nome = input("Por favor me diz o nome do estudante: ")
+                Matricula.listarEstudante(nome)
             case 8:
                 print("TELA PESQUISAR PROFESSOR")
                 os.system("clear")

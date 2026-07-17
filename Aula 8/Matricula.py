@@ -11,6 +11,7 @@ estudante = {
 }
 
 def matricular():
+
     estudante["nome"] =   input("Digite o nome do estudante ")
     estudante["nomeMae"] =   input("Digite o nome da mãe ")
     estudante["nomePai"] =   input("Digite o nome do pai ")
@@ -94,5 +95,33 @@ def matricular():
                 estudante["periodo"] = "Noite"
                 break
 
-def salvar():
-    print(estudante["nome"])
+    salvar(estudante)
+
+def salvar(novoEstudante):
+    dados = novoEstudante["nome"]+","+novoEstudante["nomeMae"]+","+novoEstudante["nomePai"]+","+novoEstudante["genero"]+","+novoEstudante["nacionalidade"]+","+novoEstudante["curso"]+","+novoEstudante["periodo"]+"\n"
+    with open('estudantes.txt','a+') as conteudo:
+        conteudo.write(dados)
+
+
+def listarEstudante(tag="todos"):
+    just = False
+    with open("estudantes.txt", "r") as arquivo:
+        for linha in arquivo:
+            estudante = linha.split(",")
+            if(tag=="todos"):
+                mostrarEstudante(estudante)
+            elif(estudante[0].lower()==tag.lower()):
+                print("Estudante encontrado ")
+                mostrarEstudante(estudante)
+                just= True
+                break
+
+def mostrarEstudante(estudante):
+    print("------------------------------------")
+    print("Nome do estudante: ",estudante[0])
+    print("Nome da mãe: ",estudante[1])
+    print("Nome do pai: ",estudante[2])
+    print("Genero : ",estudante[3])
+    print("Nacionalidade: ",estudante[4])
+    print("Curso: ",estudante[5])
+    print("Periodo: ",estudante[6])
